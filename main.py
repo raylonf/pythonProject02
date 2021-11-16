@@ -8,7 +8,7 @@ from kivy.lang import Builder
 import requests
 from datetime import date
 
-GUI = Builder.load_file("C:\\Users\\raylo\\PycharmProjects\\pythonProject02\\venv\\tela.kv")
+GUI = Builder.load_file("tela.kv")
 
 
 class MeuAplicatitivo(App):
