@@ -1,7 +1,7 @@
 # importar o App, Builder(GUI)
 # criar o nosso aplicativo
 # criar a função builder
-import datetime
+
 
 from kivy.app import App
 from kivy.lang import Builder
@@ -21,7 +21,7 @@ class MeuAplicatitivo(App):
         cotacao_bitcoin= self.pegar_cotaçao("BTC")
         cotacao_ethereum= self.pegar_cotaçao("ETH")
 
-        self.root.ids["datamoment"].text = f"Cotações do dia {date.today()}"
+        self.root.ids["datamoment"].text = f"Cotações do dia  {date.today()}"
         self.root.ids["moeda1"].text = f"Dólar R$ {cotacao_dolar}"
         self.root.ids["moeda2"].text = f"Euro R$ {cotacao_euro}"
         self.root.ids["moeda3"].text = f"Bitcoin R$ {cotacao_bitcoin}"
